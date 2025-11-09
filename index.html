@@ -6,10 +6,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jaimer's First Web Form</title>
     <link rel="stylesheet" href="style.css">
+
+    <!-- 
+    Working with HTML Forms.
+
+    For this weeks home work, you will create a basic user form. 
+
+    Assignment details:
+    - Create a new folder called first-web-form with an index.html 
+    containing a form element that a user can fill out.
+    - Please think about the layout and how you might design this 
+    page to story the various elements
+    - Create Github Repository called first-web-form this will hold 
+    your css and html file.
+    - Once complete upload the firstWebForm.html and css for this 
+    html file to your web hosting server.
+
+    The form must contain:
+    1. First Name (text)
+    2. Last Name (text)
+    3. Email (email)
+    4. Phone (tel)
+    5. Birthday (date)
+    6. Submit Button
+    
+    For your form action, you can use "https://jkorpela.fi/cgi-bin/echo.cgi". 
+    When you are ready to turn in your homework assignment, you will submit the 
+    url for your GitHub repository and the url for the web hosting server.  
+    Please including in the url the html file name.
+    -->
 </head>
 
 <body>
+    <header>
+        <div class="top-logo">
+            <a href="index.html"><img src="images/grail.png" alt="" width="100px" height=auto></a>
+        </div>
+        <div class="top-nav">
+            <nav>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="index.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="form-container">
 
+        <div class="form-container-1">
+            <h2 class="form-header">Create New Account</h2>
+            <div class="signup-form-container">
+                <form class="signup-form" action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+                    <label for="first-name">First Name:</label><br>
+                    <input type="text" id="first-name" name="first-name" required>
+                    <br>
+
+                    <label for="last-name">Last Name:</label><br>
+                    <input type="text" id="last-name" name="last-name" required>
+                    <br>
+
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required>
+                    <br>
+
+                    <label for="phone">Phone:</label><br>
+                    <input type="tel" id="phone" name="phone" required>
+                    <br>
+
+                    <label for="birthday">Birthday:</label><br>
+                    <input type="date" id="birthday" name="birthday" required>
+                    <br>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam ipsam necessitatibus itaque corrupti quas
+            ipsa dolorum, quibusdam pariatur nisi earum in repellendus, recusandae molestiae voluptates fugit. Totam
+            necessitatibus minus aspernatur!</p>
+        <p>&copy; 2025 Gringles</p>
+    </footer>
 </body>
 
 </html>
